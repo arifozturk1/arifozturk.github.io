@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Arif Öztürk - Özgeçmiş</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<img src="images/arifozturk.jpg" alt="Arif Öztürk">
+				<h1>ARİF ÖZTÜRK</h1>
+				<h3>Computer Engineering Student</h3>
+			</header>
+			<section>
+				<h2>INFO</h2>
+					<p>I am a 22-year-old, determined and hardworking second-year Computer Engineering student interested in game development.</p>
+				<h2>EDUCATION</h2>
+					<ul>
+						<li>09.22   - Present:  Karabük University, Computer Engineering</li>
+						<li>09.2017 - 06.2021:  Kartal Anatolian High School</li>
+					</ul>				
+				<h2>SKILLS</h2>
+					<ul>
+						<li>C/C++</li>
+						<li>Java</li>
+						<li>HTML/CSS</li>
+					</ul>				
+				<h2>CONTACT</h2>
+					<p id="contact_us" style="cursor: pointer; user-select: all;" title="Kopyalamak için tıkla">arifozturk.2552@gmail.com</p>
+					<nav>
+						<a href="https://www.linkedin.com/in/arif-%C3%B6zt%C3%BCrk-09a881252/" target="_blank">
+							<img src="images/linkedin-logo.png" alt="LinkedIn Logo" width="20" height="20"> LinkedIn
+						</a>
+						<br><a href="https://github.com/arifozturk1" target="_blank">
+							<img src="images/github-logo.png" alt="GitHub Logo" width="20" height="20"> GitHub
+						</a>
+					</nav>			
+		   </section>
+	   	   
+		</div>
+	
+		<footer>
+			<p>&copy; Copyright 2025 Arif Öztürk.</p>
+		</footer>	
+		<script>
+			document.getElementById("contact_us").addEventListener("click", function() {
+				const email = this.innerText;
+				navigator.clipboard.writeText(email).then(() => {
+				alert("E-posta adresi kopyalandı!");
+				});
+			});
+		</script>	
+	</body>
+</html>
